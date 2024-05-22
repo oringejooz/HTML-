@@ -1,0 +1,59 @@
+.intro{
+    background-color: powderblue;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro ul li {
+    list-style-type: circle;
+}
+
+#html{
+    text-align: left;
+    padding: 10px;
+    background-color: pink;
+    width: 380px;
+    display: inline-block;
+
+}
+
+#html ul li p{
+    color: rgb(106, 18, 33);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#css {
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(167, 109, 225);
+    width: 380px;
+    display: inline-block;
+}
+
+#css ul li p{
+    color: rgb(83, 11, 150);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#js{
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(244, 135, 103);
+    width: 380px;
+    display: inline-block;
+}
+
+#js ul li p{
+    color: rgb(150, 43, 11);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#html, #css, #js {
+    flex: 1;
+    margin: 10px; 
+    box-sizing: border-box;
+}
+
+
