@@ -1,0 +1,33 @@
+body {
+    background-color: powderblue;
+    margin: 20% 20%;
+    text-align: center;
+    border: 2px solid;
+    padding: 30px;
+  }
+  h1 {
+    color: rgb(49, 106, 230);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ 
+  P {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+#round{
+    padding: 5px;
+    width: 111px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(35, 150, 192);
+    font-weight: bolder;
+    border: rgb(91, 130, 215);
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    color: rgb(207, 237, 236);
+}
+
+#round:active{
+    background-color: rgba(32, 215, 232, 0.4);
+}
