@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 200px;
+        
+        }
+        th,td{
+            border-bottom: 1px solid white;
+            padding: 10px;
+            text-align: center;
+
+        }
+        tr:nth-child(even){
+            background-color: rgb(207, 179, 234);
+        }
+        tr:nth-child(odd){
+            background-color: rgb(124, 87, 158);
+        }
+        td:nth-child(odd),th:nth-child(odd){
+            background-color: rgb(196, 152, 237);
+        }
+        tr:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Zebra Styling</caption>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>

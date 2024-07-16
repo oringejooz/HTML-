@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        
+        .t1, th,td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+            padding-top: 6px;
+            padding-left: 5px;
+            padding-right: 15px;
+            padding-bottom: 2px;
+        }
+
+        .fruit{
+            border-spacing: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="t1">
+        <tr>
+            <th>Name</th>
+            <td>Swarnima</td>
+
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>21</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>Female</td>
+        </tr>
+    </table>
+<br><br>
+    <table class="fruit">
+        <tr>
+            <th rowspan="2">1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Apple</td>
+            <td>Red</td>
+            <td>Sweet</td>
+        </tr>
+    </table>
+</body>
+</html>
