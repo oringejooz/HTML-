@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Button</title>
+    <style>
+        body{
+    text-align: center;
+    padding: 100px 50px;
+    margin: 10%;
+}
+
+a:link{
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited{
+    color: pink;
+    text-decoration: none;
+}
+
+#link:active {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+a:hover{
+    color: green;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <button onclick="document.location = 'links.html'">HTML TUtorial</button>
+    <a href="links.html"><button>HTML Button</button></a>
+    <a href="https://www.w3schools.com/html/html_links.asp" id="link">W3S Link</a>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+    <!-- <picture> element allows you to display different pictures for different devices or screen sizes -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://i.pinimg.com/564x/86/2d/ad/862dadacb47ae68429e20774593ea566.jpg">
+            <source media="(min-width: 465px)" srcset="https://i.pinimg.com/564x/01/9c/91/019c9170dade93d493c939d19424ce61.jpg">
+            <img src="img_girl.jpg" alt="Default image">
+          </picture>
+        
+        <picture>
+            <source media="(min-width: 500px)" srcset="#">
+            <source media="(min-width: 300px)" srcset="#">
+            <img src="https://i.pinimg.com/564x/ba/02/27/ba02279a4fba161137c0362355910525.jpg" alt="jelly kirby">
+        </picture>
+
+<!-- 
+        
+The `<picture>` element serves two main purposes:
+
+1. **Bandwidth**: It helps load smaller images on small screens or devices, saving bandwidth. 
+                The browser uses the first matching `<source>` element and ignores the rest.
+
+2. **Format Support**: It allows for multiple image formats to ensure compatibility. 
+                        The browser uses the first format it supports and ignores the others.
+
+-->
+          
+    
+</body>
+</html>
