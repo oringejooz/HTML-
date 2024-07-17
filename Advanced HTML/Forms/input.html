@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <style>
+        div{
+            color: blue;
+            font-family: Verdana;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 40%;margin: auto; text-align: center;padding: 30px">
+        <form action="">
+
+            <label for="uname">Username : </label>
+            <input type="text" id="uname" value="Enter Username"> <br> <br>
+            <label for="pword">Password : </label>
+            <input type="password" id="pword"> <br> <br>
+            <input type="submit" value="Log in">
+            <input type="reset"> <br> <br>
+            Select Gender :
+            <input type="radio" id="male" name="Gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender">
+            <label for="female">Female</label>
+            <br><br>
+            Preferred Beverage :
+            <input type="checkbox" name="coffee" id="coffee">
+            <label for="coffee">Coffee</label>
+            <input type="checkbox" name="tea" id="tea">
+            <label for="tea">Tea</label>
+            <input type="checkbox" name="milk" id="milk">
+            <label for="milk">Milk</label><br><br>
+            <input type="button" name="button" id="button" value="Click me" onclick="alert('Hello World')">
+            <br><br>
+            <label for="favcolor">Pick your Favorite color</label>
+            <input type="color" name="favcolor" id="favcolor">
+            <br><br>
+            <label for="date">Enter Birthdate</label>
+            <input type="date" name="date" id="date" max="2023-12-30" min="2000-01-01">
+            <!-- You can also use the min and max attributes to add restrictions to dates -->
+
+            <br><br>
+<!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone. -->
+            <input type="datetime-local" name="local" id="local"> <br><br>
+            <label for="email">Enter Email :</label>
+            <input type="email" id="email" name="email"><br> <br>
+            <input type="image" src="favicon.ico" name="" id="">
+        </form>
+    </div>
+</body>
+</html>

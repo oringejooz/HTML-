@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form element</title>
+</head>
+<body>
+    <div>
+        <form action="/action_page.php" oninput = "x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="checkbox" id="milk" name="List">
+            <label for="milk">Milk</label>
+            <!-- 
+            The for attribute of the <label> tag should be equal to the id attribute of the <input> 
+            element to bind them together.
+            -->
+            <input type="checkbox" id="coffee" name="List">
+            <label for="coffee">Coffee</label>
+            <br><br><hr>
+            <label for="cars">Choose Cars</label>
+            <!-- 
+            The <select> element defines a drop-down list:
+            -->
+            <select name="cars" id="cars" size="4" multiple>
+            <!-- 
+            Use the size attribute to specify the number of visible values  
+            Use the multiple attribute to allow the user to select multiple values
+            -->
+                
+                <option value="honda">Honda</option>
+            <!-- 
+            By default, the first item in the drop-down list is selected.
+            To define a pre-selected option, add the selected attribute to the option    
+            -->
+                <option value="" selected>Choose</option>
+                <option value="maruti">Maruti</option>
+                <option value="fiat">Fiat</option>
+                <option value="bmw">BMW</option>
+            </select>
+            <br><br>
+            Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.
+<br><br>
+            <!-- 
+            The <textarea> element defines a multi-line input field (a text area)
+            -->
+            <label for="textarea">Feedback</label><br>
+            <textarea name="textarea" id="textarea"></textarea>
+
+            <!-- 
+            The <button> element defines a clickable button
+            -->
+<br><br>
+            <button type="button" onclick="alert('Hello Swar')">
+                HI
+            </button>
+
+            <!-- 
+            
+            The <fieldset> element is used to group related data in a form.
+
+            The <legend> element defines a caption for the <fieldset> element.
+            
+            -->
+<br> <br> <br>
+            <fieldset style="display: block;margin: auto;text-align: center;">
+                <legend>Login To Account</legend> <br>
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="uname"> <br> <br>
+                <label for="pword">Password</label>
+                <input type="text" id="pword" name="pword"> <br> <br>
+                <input type="submit" style="display: block;margin: auto;">
+            </fieldset> <br>
+
+            <input list="browsers">
+            <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+            </datalist>   
+            <br><br>
+            <!-- 
+            The <output> element represents the result of a calculation 
+            (like one performed by a script)
+            -->
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="40">
+            =
+            <output name="x" for="a b"></output>
+        </form>
+    </div>
+</body>
+</html>
