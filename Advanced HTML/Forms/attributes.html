@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes</title>
+</head>
+<body>
+    <form action="">
+        <!-- The input value attribute specifies an initial value for an input field -->
+        <label for="uname">Username : </label>
+        <input type="text" id="uname" name="uname" value="Username"><br> <br>
+
+        <!-- The input readonly attribute specifies that an input field is read-only. -->
+        Read only :
+        <input type="text" value="Hi this is read only" readonly><br><br>
+
+        <!-- 
+        The input disabled attribute specifies that an input field should be disabled.
+        A disabled input field is unusable and un-clickable.
+        The value of a disabled input field will not be sent when submitting the form
+        -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        
+        <!-- 
+        
+        The input size attribute specifies the visible width, in characters, of an input field.
+
+        The default value for size is 20.
+
+        Note: The size attribute works with the following input types: text, search, tel, url, email, and password
+        
+        -->
+<br>
+        <label for="pword">Password</label>
+        <input type="password" id="pword" name="password" size="8">
+<br><br>
+        <!-- 
+        maxlength is set, the input field will not accept more than the specified number of characters
+        -->
+        <label for="pword">Password</label>
+        <input type="password" id="pword" name="password" size="8" maxlength="8">
+<br><br>
+        <!-- 
+        The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week
+        -->
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+        <br><br>
+        <!-- The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.
+
+The multiple attribute works with the following input types: email, and file. -->
+        <label for="files">Choose File</label>
+        <input type="file" id="files" name="files" multiple>
+        <br><br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" multiple>
+<br><br>
+        <!-- pattern -->
+         <label for="country">Country Code :</label>
+         <input type="text" name="country" id="country" pattern="[A-Za-z]{3}" title="3 character countrycode"> <br><br>
+        <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field -->
+
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+        <!-- The input required attribute specifies that an input field must be filled out before submitting the form -->
+
+        
+
+
+    </form>
+</body>
+</html>
