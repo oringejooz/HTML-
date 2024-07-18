@@ -1,0 +1,37 @@
+/* CSS element selector */
+
+p{
+    font-size: large;
+}
+
+/* CSS class selector */
+.container{
+    width: 85%;
+    text-align: center;
+    overflow: hidden;
+}
+/* CSS id selector */
+#image{
+    width: 415px;
+}
+
+/* CSS Universal selector */
+
+*{
+    color: brown;
+}
+
+/* grouping selectors */
+
+h1,h2,h3{
+    text-align: center;
+    color: rgb(25, 130, 130);
+}
+
+/* 
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+*/
