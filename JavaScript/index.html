@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="bg">
+    <h1 id="demo">Hello Swarnima</h1>
+    <button onclick="myEvent()">Click Me!</button>
+    <br> <br>
+    <img  id="img" src="https://i.pinimg.com/564x/b7/63/78/b763784807e16d5f34dfbfb667401320.jpg" alt="cute pattern" height="200px" width="160px"> <br>
+    <button onclick="document.getElementById('img').src ='ducky.jpg'">Change Image</button> 
+    <button onclick="document.getElementById('bg').style.backgroundColor ='rgb(50,50,50)'">Background Dark Mode</button>
+
+    <!-- Hiding HTML elements can be done by changing the display style
+    document.getElementById("demo").style.display = "none"; 
+    
+    Showing hidden HTML elements can also be done by changing the display style
+    document.getElementById("demo").style.display = "block";
+    -->
+
+    <script>
+        function myEvent(){
+            document.getElementById("demo").innerHTML="Hello JavaScript";
+        }
+    </script>
+    <script src="script.js"></script>
+
+    <!-- 
+    Placing scripts in external files has some advantages:
+
+    +   It separates HTML and code
+    +   It makes HTML and JavaScript easier to read and maintain
+    +   Cached JavaScript files can speed up page loads
+
+    An external script can be referenced in 3 different ways:
+
+    +   With a full URL (a full web address)
+    +   With a file path (like /js/)
+    +   Without any path
+    -->
+</body>
+</html>
