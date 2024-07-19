@@ -1,0 +1,27 @@
+div{
+    background-color: blanchedalmond;
+    width: 33%;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    /* SHorthand margin */
+    margin: 25px 100px 24px 30px;
+    /* set the margin property to auto to horizontally center the element within its container */
+    margin-left: 50px;
+}
+
+
+/* left margin of the <p class="ex1"> 
+element be inherited from the parent element (<div>) */
+p.ex1{
+    margin-left: inherit;
+}
+
+h1 {
+    margin: 0 0 50px 0;
+  }
+  
+h2 {
+    margin: 20px 0 0 0;
+}
