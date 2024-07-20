@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(51, 102, 146);
+            display: flex;
+            height: 150px;
+        }
+        .container>div{
+            height: 25px;
+            width: 25px;
+            padding: 30px;
+            margin: auto;
+            background-color: rgb(217, 230, 48);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>1</h1></div>
+        <div><h1>2</h1></div>
+        <div><h1>3</h1></div>
+    </div>
+    <button onclick="hideDivs()">Button</button>
+    <script>
+        
+            function hideDivs() {
+            var containerDivs = document.querySelectorAll('.container > div');
+            containerDivs.forEach(function(div) {
+                div.style.display = 'none';
+            });
+        }
+    
+    </script>
+</body>
+</html>
