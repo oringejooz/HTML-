@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Swarnima";
+        /*
+        Strings are immutable in Js
+
+        String Indices str[0] to str[n-1]
+        str.length method
+
+        Template Literals in JS: Way to have embedded expressions in Strings
+
+        `Any sentence ${Expression}`
+
+        ESCAPE CHARACTERS:
+        \n
+        \t
+        */
+       let obj = {
+        item : "pen",
+        price : 10
+       };
+       console.log("The cost of",obj.item,"is",obj.price,"rupees");
+       let sentence = `This is a template literal`;
+       let output = `The cost of ${obj.item} is ${obj.price} rupees`;//Template literal - String Interpolation
+       console.log(output);
+    </script>
+</body>
+</html>
