@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background-color: rgb(174, 205, 232);
+}
+button{
+    height: 50px;
+    width: 80px;
+    border: none;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: rgb(175, 68, 68);
+}
+
+button:active{
+    background-color: rgb(96, 17, 17);
+}
+
