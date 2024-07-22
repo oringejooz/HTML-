@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in Javacript</h1>
+
+    <script>
+        function addNum(a,b){
+            return a+b;
+        }
+
+        //Arrow Functions Modern Functions
+
+        const multNum = (n1,n2)=>{
+            return a*b;
+        }
+        const printHello = ()=>{
+            alert("Hello");
+        }
+
+        function numVowels(str){
+            const vowel = "aeiouAEIOU";
+            let count = 0
+            for(let val of str){
+                for(let val2 of vowel){
+                    if(val === val2){
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
+        const retVowel = (str)=>{
+            const vowel = "aeiouAEIOU";
+            let count = 0
+            for(let val of str){
+                for(let val2 of vowel){
+                    if(val === val2){
+                        count++;
+                    }
+                }
+            }
+            return count;   
+        }
+
+    </script>
+</body>
+</html>

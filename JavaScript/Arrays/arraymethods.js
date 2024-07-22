@@ -15,6 +15,7 @@ Types
     unshift() - add to start
     slice(start,end)
     splice() - change original array (add,remove,replace)
+    splice(start,delCount,newElement1,...)
     */
 
 let food = ["pizza","laphing","chicken"];
@@ -33,3 +34,5 @@ console.log(food.concat(a2,a3));
 a2.unshift('-1');
 a2.shift()
 a2.unshift(0)
+
+let arr = [1,2,3,4,5,6,7,8]

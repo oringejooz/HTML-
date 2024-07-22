@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number :"));
+        function createArray(num){
+            let arr =[];
+            for(let i=1;i<=num;i++){
+                arr.push(i);
+            }
+            return arr;
+        }
+
+        let numArr = createArray(num);
+        console.log(numArr);
+        let sumArray = numArr.reduce((prev,curr)=>{
+            return prev+curr;
+        });
+
+        console.log("Sum is",sumArray);
+
+        let prodArray = numArr.reduce((prev,curr)=>{
+            return prev * curr;
+        });
+
+        console.log("Product is",prodArray);
+        
+
+    </script>
+</body>
+</html>
