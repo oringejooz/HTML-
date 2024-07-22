@@ -20,3 +20,8 @@ button:active{
     background-color: rgb(96, 17, 17);
 }
 
+.head{
+    color: blueviolet;
+    background-color: yellow;
+    padding: 5px;
+}
